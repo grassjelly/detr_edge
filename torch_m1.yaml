@@ -5,11 +5,10 @@ channels:
 dependencies:
   - python=3.9
   - pip
-  - pytorch-gpu
-  - cudatoolkit
-  - torchvision
   - transformers[onnx]
   - onnxruntime
+  - mkl < 2022
   - pip:
+      - torch
       - transformers==4.18.0
       - timm
